@@ -13,11 +13,11 @@ from src.logger import logging
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
-from src.utils import save_object
+from src.util import save_object
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join('artifacts',"proprocessor.pkl")
+    preprocessor_obj_file_path=os.path.join('artifact',"proprocessor.pkl")
 
 class DataTransformation:
     def __init__(self):
